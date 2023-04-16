@@ -1,0 +1,29 @@
+// 6.Ingresar los lados de un rectángulo y calcular su diagonal principal,
+// superficie y perímetro. Imprimir los resultados solicitados.
+
+// diagonal = raiz cuadrada de (base^2 + altura^2)
+
+Console.WriteLine("Para hacer cálculos de un rectángulo ingrese los siguientes valores: ");
+
+Console.WriteLine("Ingrese el valor de la base: ");
+float Base   = float.Parse(Console.ReadLine());
+Console.WriteLine("ingrese el valor de la altura: ");
+float Altura = float.Parse(Console.ReadLine());
+
+double Base1 = Math.Pow(Base, 2); 
+
+double Altura1 = Math.Pow(Altura, 2);  
+
+double raiz = Math.Sqrt(Base1 +  Altura1);
+
+float perimetro = Base * 2 + Altura * 2;
+
+float superficie = Base * Altura;
+
+Console.WriteLine(" *Haciendo cálculos* ");
+
+Console.WriteLine("La diagonal del rectángulo es de: " + raiz);
+
+Console.WriteLine("El perímetro del rectángulo es de: " + perimetro);  
+
+Console.WriteLine("La superficie del rectángulo es de: " + superficie);
